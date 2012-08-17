@@ -1,4 +1,11 @@
-# FlexNav jQuery Plugin
+# FlexNav jQuery Plugin (for Joomla!)
+
+## A Joomla-friendly port of the original FlexNav
+This is a version of the brilliant FlexNav by Jason Weaver, https://github.com/indyplanets/flexnav, modified to make it compatible with Joomla's native menu module, mod_menu. If you aren't using Joomla!, please do not use this version!
+
+If you are using Joomla! please be aware that this is not an extension, you cannot simply install it as you would a Joomla extension. If the code below is meaningless you should head over to extensions.joomla.org/ and find something easier to use.
+
+Everything below is from the original and untouched by me.... 
 
 ## A Device Agnostic Approach to Complex Site Navigation
 

@@ -10,11 +10,11 @@
 </head>
   <body>		
 	<div class="container">		
-		<h1 class="page-title">FlexNav</h1>
+		<h1 class="page-title">FlexNav (for Joomla!)</h1>
 		<div class='menu-button'>Menu</div>	
 		<nav>
 			<ul id="nav" role="navigation">
-				<li class="top-level item-with-ul"><a href="" class="link-with-ul">Item #1</a>
+				<li class="parent"><a href="" class="link-with-ul">Item #1</a>
 					<ul class="sub-menu">
 						<li><a href="#content">Sub 1 Item #1</a></li>
 						<li><a href="">Sub 1 Item #2</a></li>
@@ -23,7 +23,7 @@
 					</ul>
 				</li>
 
-				<li class="top-level item-with-ul"><a href="" class="link-with-ul">Item #2</a>
+				<li class="parent"><a href="" class="link-with-ul">Item #2</a>
 					<ul class="sub-menu">
 						<li><a href="">Sub 1 Item #1</a></li>
 						<li><a href="">Sub 1 Item #2</a></li>
@@ -33,7 +33,7 @@
 
 				<li class="top-level"><a href="">Item #3</a>
 				</li>
-				<li class="top-level item-with-ul"><a href="" class="link-with-ul">Item #4</a>
+				<li class="parent"><a href="" class="link-with-ul">Item #4</a>
 					<ul class="sub-menu">
 						<li><a href="">Sub 1 Item #1</a></li>
 						<li><a href="">Sub 1 Item #1</a></li>
@@ -49,9 +49,11 @@
 		<section role="main" id="content">
 			<h1>A Device Agnostic Approach to Complex Site Navigation</h1>
 			<h2>The Details</h2>
+			<p>This is a Joomla port, by <a href="http://twitter.com/nternetinspired">Seth Warburton</a>, of the original <a href="https://github.com/indyplanets/flexnav">Flexnav</a> by <a href="http://jasonweaver.name">Jason Weaver</a> (to whom all credit should go). I have simply made some minor modifications to ensure that the script and css target existing elements of Joomla's native menu module, mod_menu. If you are not using Joomla, use the original version not this one!</p>
+             			<h2>What the author says about the original&hellip;</h2>
 			<p>The mock navigation you see above is a mobile-first example of using media queries and javascript to make a decent site menu with drop downs. Special attention is paid to touch screens using click events. This is something I use to test different navigation techniques and may change as I iterate over different solutions to the problem. Basically I want a simple model to build upon when working on sites from scratch.</p>
 											
-				<p>More details to come as I keep testing. <a href="https://github.com/indyplanets/flexnav">Fork on GitHub.</a></p>
+				<p>More details to come as I keep testing. <a href="https://github.com/indyplanets/flexnav">Fork on GitHub.</a></p>   
 
 		</section>
     <footer class="site-footer" role="contentinfo">

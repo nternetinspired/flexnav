@@ -69,7 +69,7 @@ p {font-size: 14px;margin-bottom: 16px; line-height: 18px;}
 	width: 100%;		
 }
 
-[role='navigation'] li.item-with-ul {	
+[role='navigation'] .parent {	
 	background-color: #222;	
 			
 }
@@ -81,11 +81,11 @@ p {font-size: 14px;margin-bottom: 16px; line-height: 18px;}
 	border-bottom: 1px solid #111;			
 }
 
-[role='navigation'] li a.link-with-ul {
+[role='navigation'] .parent a {
 	border-right: 1px solid #222;		
 }
 
-[role='navigation'] .top-level a {
+[role='navigation'] li a {
 	position: relative;
 	display: block;
 	background-color: #333;
@@ -107,20 +107,20 @@ p {font-size: 14px;margin-bottom: 16px; line-height: 18px;}
 }
 
 [role='navigation'] li ul {
-	position: relative;
+	position: absolute;
 	border-top: 1px solid #333;
 	border-bottom: 1px solid #333;	 				
 }
 
-[role='navigation'] .item-with-ul {
+[role='navigation'] .parent {
 	background-image: url('../images/arrow-down.png');
 	background-repeat: no-repeat;
 	background-position: 93% 18px;	
 }
-.sub-menu {
+.parent ul {
 	display: none;
 }
-.sub-menu.open {
+.parent ul.open {
 	display: block;
 }
 .site-footer {
@@ -154,7 +154,7 @@ p {font-size: 14px;margin-bottom: 16px; line-height: 18px;}
 		background-color: #333;	
 		width: 20%;		
 	}
-	.flexNav-no-touch .item-with-ul:hover > ul { 
+	.flexNav-no-touch .parent:hover > ul { 
 		opacity: 1;
 		top: 3.1em;	
 		position: absolute;	
@@ -163,7 +163,7 @@ p {font-size: 14px;margin-bottom: 16px; line-height: 18px;}
 		border-left: 1px solid #000;
 		border-bottom: none;		
 	}
-	.flexNav-no-touch [role='navigation'] li ul {
+	.flexNav-no-touch [role='navigation'] li.parent ul {
 		position: absolute; 
 		top: auto;
 		left: 0;
@@ -175,7 +175,7 @@ p {font-size: 14px;margin-bottom: 16px; line-height: 18px;}
 	[role='navigation'] li ul li a {
 		border-bottom: none;	
 	}	
-	.flexNav-touch [role='navigation'] li ul.sub-menu {
+	.flexNav-touch [role='navigation'] li.parent ul {
 		position: absolute; 
 		top: auto;
 		left: 0;
@@ -183,7 +183,7 @@ p {font-size: 14px;margin-bottom: 16px; line-height: 18px;}
 		z-index: 1;					
 	}	
 
-	.flexNav-no-touch .item-with-ul:hover > ul	 { 
+	.flexNav-no-touch li.parent:hover > ul	 { 
 		visibility: visible;
 		opacity: 1;
 		height: auto;

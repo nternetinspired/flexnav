@@ -7,6 +7,9 @@
 * http://sam.zoy.org/wtfpl/
 *
 * Date: Sunday July 8
+*
+*
+* August 2012 - modified for Joomla 2.5 mod_menu compatibility - Seth Warburton @nternet-inspired.com
 */
 
 (function($) {
@@ -38,13 +41,13 @@
 	    function is_touch_device() {
 	        return !! ('ontouchstart' in window);
 	    }
-
-	    // Set class on html element for touch/no-touch
-	    if (is_touch_device()) {
-	        $('html').addClass('flexNav-touch');
-	    } else {
-	        $('html').addClass('flexNav-no-touch');
-	    }
+		
+		// Set class on html element for touch/no-touch
+		if (is_touch_device()) {
+		$('html').addClass('flexNav-touch');
+		} else {
+		$('html').addClass('flexNav-no-touch');
+		}
 
 	    // Toggle for nav menu
 	    $('.menu-button').click(function() {
@@ -57,8 +60,8 @@
 	    });
 	
 	    // Toggle click for sub-menus on touch and or small screens
-	    $('.item-with-ul').click(function() {
-	        $(this).find('.sub-menu').slideToggle(settings.animationSpeed);
+	    $('li.parent').click(function() {
+	        $(this).find('ul').slideToggle(settings.animationSpeed);
 	    });
 
 	    // Call on resize.
