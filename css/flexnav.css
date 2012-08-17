@@ -74,7 +74,7 @@ p {font-size: 14px;margin-bottom: 16px; line-height: 18px;}
 			
 }
 
-[role='navigation'] li a {
+[role='navigation'] li.parent a {
 	margin-right: 20%;
 	display: block;
 	color: #ddd;
@@ -90,7 +90,6 @@ p {font-size: 14px;margin-bottom: 16px; line-height: 18px;}
 	display: block;
 	background-color: #333;
 	padding: 1em;
-	z-index: 2;
 }
 [role='navigation'] li ul {
 	width: 100%;			
@@ -99,28 +98,31 @@ p {font-size: 14px;margin-bottom: 16px; line-height: 18px;}
 	float: none;
 	width: 100%;			
 }
-
+[role='navigation'] li ul {
+	position: relative; 
+}
 [role='navigation'] li ul li a {
 	display: block;
 	background-color: #333;
 			
 }
 
-[role='navigation'] li ul {
+[role='navigation'] li.parent ul {
 	position: absolute;
 	border-top: 1px solid #333;
-	border-bottom: 1px solid #333;	 				
+	border-bottom: 1px solid #333;
+	z-index:2;	 				
 }
 
-[role='navigation'] .parent {
+[role='navigation'] li.parent {
 	background-image: url('../images/arrow-down.png');
 	background-repeat: no-repeat;
 	background-position: 93% 18px;	
 }
-.parent ul {
+li.parent ul {
 	display: none;
 }
-.parent ul.open {
+li.parent ul.open {
 	display: block;
 }
 .site-footer {
